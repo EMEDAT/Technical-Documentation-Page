@@ -1,0 +1,565 @@
+/*! minireset.css v0.0.7 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 7rem 10.8rem;
+  }
+
+  #navbar {
+    line-height: 1.2rem;
+    font-size: 0.5rem;
+    border-right: 1px solid black;
+    padding-top: 0.7rem;
+    /* margin: 0rem 0.7rem; */
+    overflow: scroll;
+    padding-bottom: 1rem;
+  }
+
+  .nav, .nav-link {
+    padding: 0rem 0.7rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #right-nav-link {
+    padding: 0rem 1rem;
+  }
+
+  hr {
+    margin-left: -0.7rem;
+  }
+
+  header {
+    padding-top: 0.8rem;
+    font-size: 1rem;
+}
+
+  p.text {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    padding: 0.4rem 0.2rem 0rem 0.2rem;
+  }
+
+  li {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    padding: 0.2rem 0.2rem 0rem 1.3rem;
+  }
+
+li::before {
+  display: list-item;
+  list-style-type: disc;
+  content: "";
+  position: absolute;
+  margin-left: 0.2rem;
+  font-size: 0.7rem;
+}
+
+li.circle {
+  margin-left: 1rem;
+}
+
+li.circle::before {
+display: list-item;
+content: "";
+list-style-type: circle;
+font-size: 0.5rem;
+}
+
+.codeblock {
+  background-color: rgba(189, 196, 187, 0.142);
+  font-size: 0.4rem;
+  line-height: 0.7rem;
+  padding: 0.4rem 0.4rem;
+  margin: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.end {
+  padding-bottom: 1rem;
+}
+
+
+
+
+/* FOR SCREENS GREATER THAN 400PX */
+@media only screen and (min-width: 400px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: 7rem 10.8rem;
+    }
+
+    header {
+      padding-top: 1rem;
+      font-size: 1.5rem;
+  }
+
+    #navbar {
+      line-height: 1.6rem;
+      font-size: 0.8rem;
+      border-right: 1px solid black;
+      padding-top: 0.8rem;
+      /* margin: 0rem 0.7rem; */
+      overflow: scroll;
+      padding-bottom: 2rem;
+    }
+
+    .nav, .nav-link {
+      padding: 0rem 1.3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    #right-nav-link {
+      padding: 0rem 1.3rem;
+    }
+
+    hr {
+      margin-left: -0.7rem;
+    }
+
+
+    p.text {
+      font-size: 0.85rem;
+      line-height: 1.2rem;
+      padding: 0.45rem 0.4rem 0rem 0.4rem;
+    }
+
+    li {
+      font-size: 0.85rem;
+      line-height: 1.2rem;
+      padding: 0.2rem 0.2rem 0rem 2.5rem;
+    }
+
+  li::before {
+    display: list-item;
+    list-style-type: disc;
+    content: "";
+    position: absolute;
+    margin-left: 0.2rem;
+    font-size: 1rem;
+  }
+
+  li.circle {
+    margin-left: 2rem;
+  }
+
+  li.circle::before {
+  display: list-item;
+  content: "";
+  list-style-type: circle;
+  font-size: 0.8rem;
+  }
+
+  .codeblock {
+    background-color: rgba(189, 196, 187, 0.142);
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    padding: 0.4rem 0.4rem;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .end {
+    padding-bottom: 1.5rem;
+    font-size: 0.7rem;;
+  }
+}
+
+
+/* FOR DEVICES ABOVE IPAD SCREEN SIZES BUT LESS THAT MODERN DESKTOPS */
+    @media only screen and (min-width: 800px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 15.3rem 34.7rem;
+      }
+
+      header {
+        padding-top: 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    #main-doc{
+      position: relative;
+    }
+
+      #navbar {
+        position: fixed;
+        height: 100vh;
+        line-height: 2rem;
+        font-size: 0.85rem;
+        border-right: 1px solid black;
+        padding-top: 1.8rem;
+      }
+
+      .nav, .nav-link {
+        padding: 0rem 1.3rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #right-nav-link {
+        position: absolute;
+        left: 15.5rem;
+        padding: 0rem 1.3rem;
+      }
+
+      hr {
+        margin-left: -0.7rem;
+      }
+
+      p.text {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        padding: 1rem 0.4rem 0rem 0.4rem;
+      }
+
+      li {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        padding: 0.5rem 0.2rem 0rem 4rem;
+      }
+
+    li::before {
+      display: list-item;
+      list-style-type: disc;
+      content: "";
+      position: absolute;
+      margin-left: 0.2rem;
+      font-size: 1rem;
+    }
+
+    li.circle {
+      margin-left: 3rem;
+    }
+
+    li.circle::before {
+    display: list-item;
+    content: "";
+    list-style-type: circle;
+    font-size: 0.9rem;
+    }
+
+    .codeblock {
+      background-color: rgba(189, 196, 187, 0.142);
+      font-size: 0.6rem;
+      line-height: 0.8rem;
+      padding: 0.4rem 0.4rem;
+      margin: 0.5rem 0rem 0rem 0.5rem;
+    }
+
+    .end {
+      padding-bottom: 2rem;font-size: 0.7rem;;
+    }
+}
+
+
+
+/* FOR DEVICES >1100PX AND <1300PX. SAY RESONSIVE CHECK */
+    @media only screen and (min-width: 1100px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 15.3rem 34.7rem;
+      }
+
+      header {
+        padding-top: 2.1rem;
+        font-size: 2.2rem;
+    }
+
+    #main-doc{
+      position: relative;
+    }
+
+      #navbar {
+        position: fixed;
+        height: 100vh;
+        line-height: 2.65rem;
+        font-size: 1.15rem;
+        border-right: 1px solid black;
+        padding-top: 2.2rem;
+      }
+
+      .nav, .nav-link {
+        padding: 0rem 1.3rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #right-nav-link {
+        position: absolute;
+        left: 19rem;
+        padding: 0rem 1.4rem;
+      }
+
+      hr {
+        margin-left: -0.7rem;
+      }
+
+      p.text {
+        font-size: 1.15rem;
+        line-height: 1.6rem;
+        padding: 1.2rem 0.4rem 0rem 0.4rem;
+      }
+
+      li {
+        font-size: 1.15rem;
+        line-height: 1.6rem;
+        padding: 0.5rem 0.2rem 0rem 4rem;
+      }
+
+    li::before {
+      display: list-item;
+      list-style-type: disc;
+      content: "";
+      position: absolute;
+      margin-left: 0.2rem;
+      font-size: 1.2rem;
+    }
+
+    li.circle {
+      margin-left: 3rem;
+    }
+
+    li.circle::before {
+    display: list-item;
+    content: "";
+    list-style-type: circle;
+    font-size: 1rem;
+    }
+
+    .codeblock {
+      background-color: rgba(189, 196, 187, 0.142);
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      padding: 0.4rem 0.4rem;
+      margin: 0.5rem 0rem 0rem 0.5rem;
+    }
+
+    .end {
+      padding-bottom: 2rem;font-size: 0.7rem;;
+    }
+}
+
+
+/* FOR HIGHEST SCREEN SIZES*/
+@media only screen and (min-width: 1300px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 16rem 30rem;
+    }
+
+    header {
+      padding-top: 3.8rem;
+      font-size: 2.8rem;
+  }
+
+  #main-doc{
+    position: relative;
+  }
+
+    #navbar {
+      position: fixed;
+      height: 100vh;
+      line-height: 3.5rem;
+      font-size: 1.4rem;
+      border-right: 1px solid black;
+      padding-top: 3.5rem;
+    }
+
+    .nav, .nav-link {
+      padding: 0rem 1.3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    #right-nav-link {
+      position: absolute;
+      left: 24rem;
+      padding: 0rem 1.4rem;
+    }
+
+    hr {
+      margin-left: -0.7rem;
+    }
+
+    p.text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 1.2rem 0.4rem 0rem 0.4rem;
+    }
+
+    li {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      padding: 0.5rem 0.2rem 0rem 4rem;
+    }
+
+  li::before {
+    display: list-item;
+    list-style-type: disc;
+    content: "";
+    position: absolute;
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  li.circle {
+    margin-left: 5rem;
+  }
+
+  li.circle::before {
+  display: list-item;
+  content: "";
+  list-style-type: circle;
+  font-size: 1.4rem;
+  }
+
+  .codeblock {
+    background-color: rgba(189, 196, 187, 0.142);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 0.4rem 0.4rem;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .end {
+    padding-bottom: 3.8rem;font-size: 0.7rem;;
+  }
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
